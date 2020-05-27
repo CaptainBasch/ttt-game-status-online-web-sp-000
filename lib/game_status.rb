@@ -59,7 +59,7 @@ end
 def winner(board)
   
   if draw?(board) || !full?(board)
-    return nil
+    nil
   end
   
   winner_board = board.select{|move| move == "X"}
