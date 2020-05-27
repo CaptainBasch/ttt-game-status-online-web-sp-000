@@ -28,13 +28,13 @@ end
 
 def full?(board)
   i = 0
-
+result = true
   board.length.times do
     if position_taken?(board, i) == true
       i += 1
     else
-      return false
+      result = false
     end
-      return true
+  return result
   end
 end
