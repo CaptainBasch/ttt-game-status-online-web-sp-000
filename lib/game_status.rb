@@ -29,6 +29,14 @@ end
 def full?(board)
   i = 0
   
-  until position_taken?(board, i)
-    
+  while position_taken?(board, i) != false
+    i += 1
+  end
+  
+  if i == board.length()
+    return true
+  else
+    return false
+  end
+  
   
