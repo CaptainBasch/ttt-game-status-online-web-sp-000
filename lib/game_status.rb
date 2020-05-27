@@ -57,7 +57,12 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board.select do |move|
-    move == "X"
+  
+  winner_board = board.select{|move| move == "X"}
+  
+  if won?(winner_board)
+    "X"
+  else
+    "O"
   end
 end
