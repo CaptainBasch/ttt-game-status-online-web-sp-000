@@ -57,7 +57,7 @@ def over?(board)
 end
 
 def winner(board)
-  board.select do |poop|
-    
+  if won?(board.select do |move|
+    move == "X"
   end
 end
