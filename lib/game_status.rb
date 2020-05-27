@@ -57,12 +57,7 @@ def over?(board)
 end
 
 def winner(board)
-  WIN_COMBINATIONS. do |win_combination|
-    if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
-      true
-    elsif board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O"
-      
-    end
-
+  WIN_COMBINATIONS.include do |win_combination|
+    
   end
 end
