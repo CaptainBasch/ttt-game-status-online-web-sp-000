@@ -57,5 +57,5 @@ def over?(board)
 end
 
 def winner(board)
-  if board.include("X") && 
+  board.select
 end
