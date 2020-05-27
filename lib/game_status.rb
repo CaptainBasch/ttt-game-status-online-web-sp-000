@@ -58,12 +58,14 @@ end
 
 def winner(board)
   
+  if draw?(board)
+    nil
+  end
+  
   winner_board = board.select{|move| move == "X"}
   
   if won?(winner_board)
     "X"
-  elsif draw?(board)
-    nil
   else
     "O"
   end
