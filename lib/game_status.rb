@@ -57,5 +57,5 @@ def over?(board)
 end
 
 def winner(board)
-  board.select
+  board.select do ||
 end
