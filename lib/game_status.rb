@@ -57,7 +57,5 @@ def over?(board)
 end
 
 def winner(board)
-  WIN_COMBINATIONS.include do |win_combination|
-    
-  end
+  if board.include("X") && 
 end
