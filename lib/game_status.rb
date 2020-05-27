@@ -62,6 +62,8 @@ def winner(board)
   
   if won?(winner_board)
     "X"
+  elsif draw?(board)
+    nil
   else
     "O"
   end
